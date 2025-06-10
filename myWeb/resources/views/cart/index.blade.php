@@ -1,3 +1,5 @@
+
+
 @extends('layouts.app')
 @section('title','Giỏ hàng')
 
@@ -25,3 +27,4 @@
   <a href="{{ route('order.create') }}" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded">Thanh toán</a>
 @endif
 @endsection
+

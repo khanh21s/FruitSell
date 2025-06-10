@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ asset('build/css/index.css') }}">
 @extends('layouts.app')
 
 @section('title', 'Danh sách sản phẩm')
