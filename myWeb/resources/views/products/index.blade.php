@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="{{ asset('build/css/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/index.css') }}">
+<script src="{{ asset('resources/js/nav.js') }}"></script>
 @extends('layouts.app')
 
 @section('title', 'Danh sách sản phẩm')

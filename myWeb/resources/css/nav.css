@@ -1,0 +1,47 @@
+nav.bg-white {
+    background: linear-gradient(90deg, #80eb89 0%, #99e96c 100%) !important;
+    border-bottom: 2px solid #dc2626 !important;
+    box-shadow: 0 4px 16px rgba(255,51,51,0.05);
+}
+
+nav .space-x-8 a,
+nav .space-x-8 form button,
+nav .space-x-8 .p-2,
+nav .space-x-8 input[type="text"] {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+nav .space-x-8 a:hover,
+nav .space-x-8 form button:hover {
+    color: #ffb703 !important;
+    background: rgba(0,0,0,0.06);
+    transition: color 0.2s, background 0.2s;
+}
+
+nav input[type="text"] {
+    border: 1.5px solid #f87171;
+    background: #fff6f6;
+    color: #c2410c;
+    border-radius: 8px;
+}
+
+nav form button.bg-blue-600,
+nav form button.bg-blue-600:hover {
+    background: #be123c !important; /* Đỏ mận đậm */
+    border: none;
+    color: #fff !important;
+    transition: background 0.2s;
+}
+
+nav form button.bg-blue-600:hover {
+    background: #a21caf !important; /* Chuyển sang tím đỏ khi hover */
+}
+
+nav .dropdown-content,
+nav .dropdown-content * {
+    color: #c2410c !important;
+}
+.max-w-7xl mx-auto px-4 sm:px-6 lg:px-8{
+    justify-content: space-around;
+}

@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ asset('build/css/nav.css') }}">
-<script src="{{ asset('build/js/nav.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('resources/css/nav.css') }}">
+<script src="{{ asset('resources/js/nav.js') }}"></script>
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
