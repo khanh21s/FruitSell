@@ -22,16 +22,19 @@ class AuthenticatedSessionController extends Controller
     /**
      * Handle an incoming authentication request.
      */
-    public function store(LoginRequest $request): RedirectResponse
-    {
-        $request->authenticate();
+public function store(LoginRequest $request): RedirectResponse
+{
+    // Authenticate the user
+    $request->authenticate();
 
-        if(auth()->user()->role === 1) {
-            return redirect()->route('admin.products.index');
-        }else{
-
-        return redirect()->intended(route('home', absolute: false));
+    // Kiểm tra nếu là admin
+    if (auth()->user()->role == 1) {
+        // Chuyển hướng đến trang welcome cho admin
+        return redirect()->route('welcome'); // Route này cần được định nghĩa trong routes/web.php
     }
+
+    // Nếu không phải admin, chuyển hướng đến trang home
+    return redirect()->intended(route('home', absolute: false));
 }
 
     /**
