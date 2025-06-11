@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
-use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\AdminController;
 
 
 
@@ -36,6 +36,25 @@ Route::middleware('auth')->group(function(){
   Route::post('/checkout', [OrderController::class,'store'])->name('order.store');
   Route::get('/orders',    [OrderController::class,'index'])->name('order.index');
 });
+
+// auth cho admin
+Route::middleware('auth')->group(function (){ 
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.products.index');
+    
+    // Route tạo sản phẩm
+    Route::get('/admin/products/create', [ProductController::class, 'create'])->name('admin.products.create');
+    Route::post('/admin/products', [ProductController::class, 'store'])->name('admin.products.store');
+    
+    // Route chỉnh sửa sản phẩm
+    Route::get('/admin/products/{id}/edit', [ProductController::class, 'edit'])->name('admin.products.edit');
+    Route::put('/admin/products/{id}', [ProductController::class, 'update'])->name('admin.products.update');
+    
+    // Route xóa sản phẩm
+    Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])->name('admin.products.destroy');
+    
+    // Route xem chi tiết sản phẩm
+    Route::get('/admin/products/{slug}', [ProductController::class, 'show'])->name('admin.products.show');
+}); 
 
 
 

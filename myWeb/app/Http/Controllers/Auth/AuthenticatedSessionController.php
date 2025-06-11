@@ -29,8 +29,8 @@ public function store(LoginRequest $request): RedirectResponse
 
     // Kiểm tra nếu là admin
     if (auth()->user()->role == 1) {
-        // Chuyển hướng đến trang welcome cho admin
-        return redirect()->route('welcome'); // Route này cần được định nghĩa trong routes/web.php
+        // Chuyển hướng đến trang admin cho admin
+        return redirect()->route('admin.products.index');
     }
 
     // Nếu không phải admin, chuyển hướng đến trang home

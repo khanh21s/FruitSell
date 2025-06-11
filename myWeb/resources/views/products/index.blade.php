@@ -94,23 +94,12 @@ button, a {
   </div>
 @endauth
 
-<div class="grid grid-cols-4 gap-6">
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
   @foreach($products as $index => $p)
-    @php
-        $demoImages = [
-            'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80',
-            'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=400&q=80',
-            'https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=400&q=80',
-            'https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80',
-        ];
-        $image = $p->image_path
-            ? asset('storage/products/'.$p->image_path)
-            : $demoImages[$index % count($demoImages)];
-    @endphp
     <div class="bg-white p-4 rounded shadow flex flex-col justify-between product-card">
       <a href="{{ route('product.show', $p->slug) }}">
         <img
-          src="{{ $image }}"
+          src="{{ asset('storage/'.$p->image) }}"
           alt="{{ $p->name }}"
           class="w-full h-32 object-cover mb-2"
         >
