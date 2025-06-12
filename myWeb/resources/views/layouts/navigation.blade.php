@@ -195,6 +195,8 @@
       <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" aria-current="{{ request()->routeIs('home') ? 'page' : '' }}">Home</a>
       <a href="{{ route('importedFruits') }}" class="nav-link {{ request()->routeIs('importedFruits') ? 'active' : '' }}" aria-current="{{ request()->routeIs('importedFruits') ? 'page' : '' }}">Trái cây nhập khẩu</a>
       <a href="{{ route('localFruits') }}" class="nav-link {{ request()->routeIs('localFruits') ? 'active' : '' }}" aria-current="{{ request()->routeIs('localFruits') ? 'page' : '' }}">Trái cây Việt Nam</a>
+      <a href="{{ route('products.promotion') }}" class="nav-link {{ request()->routeIs('products.promotion') ? 'active' : '' }}" aria-current="{{ request()->routeIs('products.promotion') ? 'page' : '' }}">Khuyến mãi</a>
+
 
       <div class="nav-actions">
         <form method="GET" action="{{ route('products.search') }}" class="flex items-center" style="margin-bottom:0;">
@@ -230,6 +232,8 @@
     <a href="{{ route('home') }}" class="block nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
     <a href="{{ route('importedFruits') }}" class="block nav-link {{ request()->routeIs('importedFruits') ? 'active' : '' }}">Trái cây nhập khẩu</a>
     <a href="{{ route('localFruits') }}" class="block nav-link {{ request()->routeIs('localFruits') ? 'active' : '' }}">Trái cây Việt Nam</a>
+    <a href="{{ route('products.promotion') }}" class="block nav-link {{ request()->routeIs('products.promotion') ? 'active' : '' }}">Khuyến mãi</a>
+
     <form method="GET" action="{{ route('products.search') }}" class="flex items-center mt-2 mb-2">
       <input type="text" name="search" id="search-mobile" placeholder="Tìm sản phẩm..." autocomplete="off">
       <button type="submit" id="search-btn-mobile">Tìm</button>

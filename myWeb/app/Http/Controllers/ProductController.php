@@ -59,6 +59,12 @@ class ProductController extends Controller
             return redirect()->route('home')->with('error', 'Từ khóa tìm kiếm quá ngắn.');
         }
     }
+    public function promotion()
+    {
+        $products = Product::where('category_id', 1)->paginate(12);
+        // Trả về view với danh sách sản,  phẩm khuyến mãi
+        return view('products.promotion', compact('products'));
+    }
 
     // 2️⃣ Hiển thị form tạo (chỉ admin, sau này)
     public function create()

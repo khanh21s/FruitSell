@@ -17,6 +17,9 @@ Route::get('/product/{slug}', [ProductController::class,'show'])->name('product.
 Route::get('/trai-cay-nhap-khau', [ProductController::class, 'importedFruits'])->name('importedFruits');
 Route::get('/trai-cay-viet-nam', [ProductController::class, 'localFruits'])->name('localFruits');
 
+// trang khuyen mai
+Route::get('/khuyen-mai', [ProductController::class, 'promotion'])->name('products.promotion');
+
 // tim kiem
 Route::get('/search', [ProductController::class, 'search'])->name('products.search');
 
