@@ -54,7 +54,9 @@ Route::middleware('auth')->group(function (){
     
     // Route xóa sản phẩm
     Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])->name('admin.products.destroy');
-    
+    // xem danh sach don hang
+    Route::get('/admin/orders', [OrderController::class, 'adminIndex'])->name('admin.orders.index');
+
     // Route xem chi tiết sản phẩm
     Route::get('/admin/products/{slug}', [ProductController::class, 'show'])->name('admin.products.show');
 }); 

@@ -67,4 +67,10 @@ public function store(Request $request)
                        ->get();
         return view('order.index', compact('orders'));
     }
+    // Admin xem danh sách đơn hàng
+    public function adminIndex(){
+        $orders = Order::with('user')
+        ->orderBy('created_at','desc')->paginate(15);
+        return view('admin.orders.index', compact('orders'));
+}
 }

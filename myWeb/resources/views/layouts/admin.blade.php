@@ -16,7 +16,7 @@
            class="block px-3 py-2 rounded hover:bg-gray-200 {{ request()->routeIs('admin.products.*') ? 'bg-gray-200' : '' }}">
           Sản phẩm
         </a>
-        <a href=""
+        <a href="{{ route('admin.orders.index') }}"
            class="block px-3 py-2 rounded hover:bg-gray-200 {{ request()->routeIs('admin.orders.*') ? 'bg-gray-200' : '' }}">
           Đơn hàng
         </a>

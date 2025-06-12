@@ -79,6 +79,7 @@ button, a {
 <h1 class="text-2xl mb-4">Tất cả sản phẩm</h1>
 
 @auth
+<h1>session = {{session()->getId()}}</h1>
   <div class="flex-between mb-6">
     <a href="{{ route('cart.index') }}"
        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded shadow">
