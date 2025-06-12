@@ -120,7 +120,7 @@ class ProductController extends Controller
     public function show($slug)
     {
         $product = Product::with('category')->where('slug', $slug)->firstOrFail();
-        return view('admin.products.show', compact('product'));
+        return view('products.show', compact('product'));
     }
 
     // 5️⃣ Hiển thị form edit (chỉ admin)
