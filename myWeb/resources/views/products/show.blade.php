@@ -82,7 +82,7 @@
 
 <div class="flex gap-6">
   <img
-    src="{{ $product->image_path ? asset('storage/products/'.$product->image_path) : 'https://via.placeholder.com/300' }}"
+    src="{{ asset('storage/' . $product->image) }}"
     alt="{{ $product->name }}"
     class="w-1/3 object-cover rounded shadow"
     style="max-height:400px; width:auto;"
