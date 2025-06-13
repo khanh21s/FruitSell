@@ -1,45 +1,43 @@
-Các chức năng chính của website:
-Trang chủ:
+# Trang Web Bán Trái Cây
 
-Hiển thị danh sách các loại trái cây với thông tin chi tiết về giá cả, hình ảnh và mô tả.
+Trang web bán trái cây này được xây dựng bằng **Laravel**, sử dụng các công nghệ tiên tiến như **Breeze**, **Bootstrap**, **npm**, và **Aiven**. Website cung cấp một nền tảng đơn giản và hiệu quả cho việc bán trái cây trực tuyến, với các tính năng quản lý sản phẩm, tìm kiếm linh hoạt, và trải nghiệm người dùng tối ưu.
 
-Tích hợp bộ lọc giúp người dùng tìm kiếm theo các tiêu chí như loại trái cây, mức giá, v.v.
+## Các Chức Năng Chính
 
-Tìm kiếm và lọc:
+1. **Trang Chủ**:
+   - Hiển thị danh sách các loại trái cây với hình ảnh, mô tả và giá cả.
+   - Cho phép người dùng lọc sản phẩm theo các tiêu chí như loại trái cây, mức giá và nguồn gốc.
 
-Tính năng tìm kiếm linh hoạt, giúp người dùng dễ dàng tìm thấy các sản phẩm yêu thích.
+2. **Tìm Kiếm và Lọc**:
+   - Tính năng tìm kiếm giúp người dùng dễ dàng tìm thấy các sản phẩm theo tên hoặc loại trái cây.
+   - Bộ lọc đa dạng cho phép người dùng lọc theo mức giá, loại trái cây, v.v.
 
-Bộ lọc mạnh mẽ theo các tiêu chí như loại trái cây, giá cả, xuất xứ,…
+3. **Trang Quản Trị (Admin)**:
+   - Quản trị viên có thể dễ dàng quản lý các sản phẩm, đơn hàng và thông tin khách hàng.
+   - Các chức năng quản lý kho, thêm, sửa, xóa sản phẩm một cách dễ dàng.
 
-Trang Admin:
+4. **Đăng Ký và Đăng Nhập Người Dùng**:
+   - Tính năng đăng ký và đăng nhập người dùng đơn giản, với khả năng đăng nhập nhanh qua tài khoản Google.
+   - Hệ thống xác thực bảo mật cao giúp bảo vệ thông tin người dùng.
 
-Quản trị viên có thể dễ dàng quản lý sản phẩm, đơn hàng và thông tin khách hàng.
+5. **Thanh Toán Trực Tuyến**:
+   - Tích hợp các phương thức thanh toán trực tuyến như thẻ tín dụng, ví điện tử để tiện lợi cho khách hàng khi thanh toán.
 
-Chức năng quản lý kho hàng, cập nhật sản phẩm mới, xóa sản phẩm, chỉnh sửa thông tin sản phẩm.
+6. **Responsive**:
+   - Giao diện thân thiện và tối ưu hóa trên mọi thiết bị, từ máy tính bàn đến điện thoại di động.
 
-Đăng ký và đăng nhập người dùng:
+## Công Nghệ Sử Dụng
 
-Người dùng có thể dễ dàng tạo tài khoản hoặc đăng nhập bằng tài khoản Google.
+- **Laravel**: Một framework PHP mạnh mẽ giúp phát triển ứng dụng web nhanh chóng, bảo mật và dễ bảo trì.
+- **Breeze**: Một thư viện của Laravel để xây dựng hệ thống đăng nhập, đăng ký và xác thực người dùng nhanh chóng.
+- **Bootstrap**: Một framework CSS để thiết kế giao diện web đẹp mắt, linh hoạt và dễ sử dụng.
+- **npm**: Trình quản lý gói JavaScript giúp dễ dàng cài đặt và duy trì các thư viện frontend.
+- **Aiven**: Dịch vụ quản lý cơ sở dữ liệu và các dịch vụ cloud, giúp website hoạt động ổn định và bảo mật.
 
-Tính năng bảo mật cao, giúp người dùng yên tâm khi mua sắm.
+## Cài Đặt và Chạy Ứng Dụng
 
-Thanh toán trực tuyến:
+1. **Clone repository**:
 
-Tích hợp các phương thức thanh toán phổ biến như thanh toán qua thẻ tín dụng, ví điện tử.
-
-Responsive:
-
-Website được thiết kế tương thích với tất cả các thiết bị từ máy tính đến điện thoại di động.
-
-Công nghệ sử dụng:
-Laravel: Framework PHP mạnh mẽ, giúp phát triển nhanh chóng, bảo mật và dễ dàng bảo trì.
-
-Breeze: Laravel Breeze được sử dụng để xây dựng hệ thống đăng nhập, đăng ký và xác thực người dùng một cách đơn giản và nhanh chóng.
-
-Bootstrap: Framework CSS giúp giao diện trang web trở nên đẹp mắt, dễ sử dụng và tối ưu trên mọi kích cỡ màn hình.
-
-npm: Quản lý các thư viện JavaScript cần thiết, giúp tích hợp và duy trì các thư viện frontend một cách hiệu quả.
-
-Aiven: Sử dụng Aiven để quản lý cơ sở dữ liệu và các dịch vụ cloud, đảm bảo website hoạt động ổn định và bảo mật.
-
-Với các tính năng nổi bật và công nghệ tiên tiến, website bán trái cây này mang lại sự tiện lợi tối đa cho người dùng và quản trị viên, giúp quá trình mua sắm và quản lý trở nên dễ dàng và hiệu quả hơn bao giờ hết.
+   ```bash
+   git clone https://github.com/username/repository-name.git
+   cd repository-name
